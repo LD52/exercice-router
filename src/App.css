@@ -6,13 +6,84 @@
 
 .App {
   text-align: center;
-  width: 98%;
+  width: 98%; 
   margin-left: 1rem;
   height: 900px;
   border: black solid 2px;
 }
 .top{
-  border: red solid 2px;
-  height: 100px;
+  height: 40px;
+  margin-top: 1rem;
+  padding-left: 1rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.Logo{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  height: 30px;
+}
+
+.Menu{
+  width: 60% ;
+  display: flex;
+  padding : 0 2rem; 
+  justify-content: space-around;
+  align-items: center;
+}
+
+.middle{
+  height:400px;
+  display: flex; 
+  justify-content: space-around;
+  margin-top: 3rem;
+  align-items: center;
+}
+.text-left{
+height: 70%;
+width: 40%;
+display: flex;
+margin-left: 2rem;
+flex-direction: column;
+padding-left: 2rem;
+}
+
+.premier{
+display: flex;
+margin-bottom: 1rem;
+}
+
+.second{
+  margin-bottom: 3rem;
+}
+
+.troisieme{
+  border: black solid 2px;
+  border-radius: 10px;
+  height: 20%;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-right{
+  width: 50%;
+  height: 100%;
+  border: black 2px solid;
+  border-radius: 10px;
+}
+
+.intro{
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
