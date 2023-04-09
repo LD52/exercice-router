@@ -1,25 +1,17 @@
 import './../App.css';
-import Logo from './../Images/Logo.png';
-import Intro from './../Images/image1.png'; 
+import Intro from './../Images/Intro.png'; 
+import Nav from './Nav';
+import {useSelector} from 'react-redux'; 
 import Plug from './../Component/Plug';
-function Home () {
+function Home (props) {
+
+    const name = useSelector (state => state.nom); 
+
     return (
         <>
 
             <div className='top'>
-                <div className='Logo'>
-                    <img className='logo' src={Logo} alt="logo" />
-                </div>
-
-                <div className='Menu'>
-                    <div> <h6>HOME</h6></div>
-                    <div> <h6>SPACES</h6></div>
-                    <div><h6>PRODUCTS & SERVICES</h6></div>
-                    <div><h6>SHOWROOMS</h6></div>
-                    <div> <h6>COMPANY</h6></div>
-                    <div><h6>MEDIA</h6></div>
-                    <div><h6>Contacts</h6></div>
-                </div>
+                <Nav/>
             </div>
 
             <div className='middle'>
@@ -35,21 +27,13 @@ function Home () {
             </div>
 
             <div className='collection'>
-                {props.collection.map((collect )  => {
-                    return (<Plug  key={collect.id} Collection = {collect}/>)
+                {props.collection.map((collection)  => {
+                    return (<Plug  key={collection.id} collection = {collection}/>)
                 })}
                 
             </div>
 
-
-
-
-
-
-            
-
-
-
+            <div className='gallerry'> <h3>produced by {name}</h3></div>
         </>
     
 
